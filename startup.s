@@ -34,10 +34,6 @@
 .word   PendSV_Handler           /* 14 PendSV */
 .word   SysTick_Handler          /* 15 SysTick */
 	
-.rept   64
-.word   Default_Handler
-.endr
-
 .section .text.handlers, "ax", %progbits
 .thumb_func
 .global Default_Handler
